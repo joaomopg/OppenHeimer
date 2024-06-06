@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    background-color: white;
+}
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav {
+    width: 60%;
+}
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+li {
+    list-style: none;
+    color: black;
+    cursor: pointer;
+    font-size: 19px;
+    font-family: 'Kdam Thmor Pro', sans-serif;;
+    transition: .5s;
+}
+li:hover {
+    color: rgb(204, 82, 0);
+}
+#logo {
+    width: 150px;
+    height: auto;
+}
+#banner {
+    width: 100%;
+    height: 634px;
+    background-size: contain;
+    background-image: url('https://preview.redd.it/y9ocptgp6zc91.jpg?width=1500&format=pjpg&auto=webp&s=2fe63d41e73ec1edb82e147bd6d2feebdf6b386b');
+}
+#trailer-container {
+    background-color: black;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+.content {
+    background-color: black;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#trailer {
+    width: 50%;
+    background-color: black;
+}
+#sinopse {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 40px;
+}
+.description {
+    background-color: black;
+    font-size: 18px;
+    font-family: 'Kdam Thmor Pro', sans-serif;;
+    color: aliceblue;
+    width: 80%;
+}
+.button {
+    width: 200px;
+    height: 60px;
+    font-size: 18px;
+    margin-top: 40px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(204, 82, 0);
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    padding: 8px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .8s;
+}
+.button:hover {
+    background-color:white;
+    color: black;
+}
+#film-cards-container {
+    width: 100%;
+    height: 700px;
+    background-color: rgb(204, 82, 0);
+    border-top: 40px solid rgb(204, 82, 0);
+    display: flex;
+    justify-content: space-around;
+}
+.cards-content {
+    width: 90%;
+    background-color: rgb(204, 82, 0);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 40px;
+}
+.banner1 {
+    background-image: url('https://s.yimg.com/ny/api/res/1.2/pj0pF7dhgCvl8y8XkV2KcA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTk2MA--/https://media.zenfs.com/fr/cover_media_fr_articles_911/4b320d43fdea82c73202db14d3f02fd8');
+}
+.banner2 {
+    background-image: url('https://cinepop.com.br/wp-content/uploads/2023/07/imagem_2023-07-14_132156473.png.webp');
+}
+.banner3 {
+    background-image: url('https://hips.hearstapps.com/hmg-prod/images/matt-damon-attends-uk-premiere-of-oppenheimer-at-the-odeon-news-photo-1689794931.jpg?crop=0.898xw:0.599xh;0.0501xw,0.0438xh&resize=1200:*');
+}
+.card {
+    height: 700px;
+    background-size: cover;
+    background-position: 50% 30%;
+    display: flex;
+    flex-direction: column-reverse;
+    color: aliceblue;
+    font-size: 17px;
+    font-family: 'Kdam Thmor Pro', sans-serif;;
+    padding: 0% 0% 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 1s;
+}
+.card:hover {
+    transform: scale(1.04);
+}
+footer {
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    border-top:rgb(204, 82, 0) solid 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+    font-family: 'Kdam Thmor Pro', sans-serif;;
+    color: aliceblue;
+}
+span {
+    background-color: black;
+    color: aliceblue;
+}
+.footer-navigation {
+    display: none;
+}
+.footer-list {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-list-color {
+    background-color: black;
+    color: rgb(204, 82, 0);
+}
+@media(max-width: 768px) {
+    .footer-navigation {
+        display: block;
+    }
+    nav {
+        display: none;
+    }
+    .cards-content {
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+    }
+    #banner {
+        background-position: 40%;
+        background-size: cover;
+    }
+    .banner1 {
+        background-position: 50% 10%;
+    }
+    .content {
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .description {
+        width: 100%;
+    }
+    #sinopse {
+        margin-left:0%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #trailer {
+        width: 100%;
+    }
+    #trailer-container {
+        height: 600px;
+    }
+}
+@media(max-width: 2000px) {
+    #banner {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 40%;
+    }
+}
